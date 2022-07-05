@@ -14,7 +14,7 @@ import time
 # ----------- FUNZIONI -----------
 
 def cleanup(): # pulisce le vecchie configurazioni, file e namespace
-    subprocess.call(['/bin/bash', '-i', '-c', 'cleanup'])    
+    subprocess.call(['/bin/bash', '-i', '-c', 'cleanup'])
     files = glob.glob("outputs/*")
     for file in files:
         os.remove(file)
@@ -286,9 +286,30 @@ used_macs = [] # lista dei mac
 
 print('4. assegnamento degli ip, vid e mac alle zone in corso...')
 
+# assegnamento per la superzona
+ip[3] = 254 # ultimo indirizzo delle zone prima del broadcast
+super_zone.add_vip(translate_ip(ip)) # aggiunta del vip alla zona per il routing
+used_ips.append(translate_ip(ip))
+super_zone.add_vid(ip[2] * 100) # le main zones devono avere il vid come multiplo di 100 (100, 200, ...)
+perimeter = get_perimeter(super_zone.perimeter)
+perimeter.add_base_vid(ip[2] * 100)
+used_vids.append(ip[2] * 100)
+super_zone.add_mac(create_mac(ip[2])) # aggiunta mac alla zona
+used_macs.append(create_mac(ip[2]))  
+ip[3] = 1
+
+for node in super_zone.nodes: # assegnamento degli ip agli host della main zone
+    print(super_zone.name, node.name, translate_ip(ip))
+    if(node.type != 'switch'): # L2
+        node.assign_ip(translate_ip(ip))
+        create_host(node) 
+        used_ips.append(translate_ip(ip))
+        ip[3] += 1 # incremento per altro host
+    ip[2] += 1 # cambio di zona
+
 for perimeter in perimeters:
-    for zone in perimeter.zones:
-        if(zone.id == perimeter.main_zone.id): # partenza dalla main zone di ogni perimetro
+    for zone in perimeter.zones:        
+        if(zone.id == perimeter.main_zone.id and zone.id != super_zone.id): # partenza dalla main zone di ogni perimetro
             ip[3] = 254 # ultimo indirizzo delle zone prima del broadcast
             zone.add_vip(translate_ip(ip)) # aggiunta del vip alla zona per il routing
             used_ips.append(translate_ip(ip))
@@ -299,6 +320,7 @@ for perimeter in perimeters:
             used_macs.append(create_mac(ip[2]))  
             ip[3] = 1
             for node in zone.nodes: # assegnamento degli ip agli host della main zone
+                print(zone.name, node.name, translate_ip(ip))
                 if(node.type != 'switch'): # L2
                     node.assign_ip(translate_ip(ip))
                     create_host(node) 
