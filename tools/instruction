@@ -1,0 +1,10 @@
+before running:
+
+$ sudo apt-get update -y
+$ sudo apt-get install plotnetcfg -y 
+$ sudo apt-get install -y libjansson-dev
+$ sudo apt install xdot -y
+
+for running:
+
+$ ./plotnet

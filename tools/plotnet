@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo plotnetcfg > /tmp/network.dot
+
+if ! pgrep "xdot" >/dev/null 2>&1 ; then
+    xdot /tmp/network.dot >/dev/null 2>&1 &
+fi

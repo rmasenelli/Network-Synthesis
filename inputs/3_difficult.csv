@@ -1,0 +1,143 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Status,Text Area 1
+1,Document,,,,,,,,,COMPLETE,difficile
+2,Page,,,,,,,,,,Pagina 1
+3,Region,Google Cloud Platform 2018,2,,,,,,,,bar
+4,Zone,Google Cloud Platform 2018,2,3,,,,,,,armadio_bar
+5,Region,Google Cloud Platform 2018,2,,,,,,,,amministrazione
+6,Zone,Google Cloud Platform 2018,2,5,,,,,,,amm1
+7,Zone,Google Cloud Platform 2018,2,5,,,,,,,amm2
+8,Zone,Google Cloud Platform 2018,2,5,,,,,,,amm3
+9,Zone,Google Cloud Platform 2018,2,5,,,,,,,armadio_amministrazione
+10,Region,Google Cloud Platform 2018,2,,,,,,,,biblioteca
+11,Zone,Google Cloud Platform 2018,2,10,,,,,,,biblio1
+12,Zone,Google Cloud Platform 2018,2,10,,,,,,,armadio_biblioteca
+13,Zone,Google Cloud Platform 2018,2,10,,,,,,,biblio2
+14,Zone,Google Cloud Platform 2018,2,3,,,,,,,cassa_bar
+15,Region,Google Cloud Platform 2018,2,,,,,,,,ateneo
+16,Region,Google Cloud Platform 2018,2,,,,,,,,aule
+17,Zone,Google Cloud Platform 2018,2,16,,,,,,,aula_delta
+18,Zone,Google Cloud Platform 2018,2,16,,,,,,,armadio_aule
+19,Zone,Google Cloud Platform 2018,2,16,,,,,,,aula_alpha
+20,Zone,Google Cloud Platform 2018,2,15,,,,,,,segreteria
+21,Zone,Google Cloud Platform 2018,2,15,,,,,,,rack_server
+22,Region,Google Cloud Platform 2018,2,,,,,,,,uffici
+23,Zone,Google Cloud Platform 2018,2,22,,,,,,,uff1
+24,Zone,Google Cloud Platform 2018,2,22,,,,,,,uff2
+25,Zone,Google Cloud Platform 2018,2,22,,,,,,,uff3
+26,Zone,Google Cloud Platform 2018,2,22,,,,,,,armadio_uff
+27,Region,Google Cloud Platform 2018,2,,,,,,,,laboratorio
+28,Zone,Google Cloud Platform 2018,2,27,,,,,,,cell1
+29,Zone,Google Cloud Platform 2018,2,27,,,,,,,cell2
+30,Zone,Google Cloud Platform 2018,2,27,,,,,,,cell3
+31,Zone,Google Cloud Platform 2018,2,27,,,,,,,cell4
+32,Zone,Google Cloud Platform 2018,2,27,,,,,,,cell5
+33,Zone,Google Cloud Platform 2018,2,27,,,,,,,cell6
+34,Zone,Google Cloud Platform 2018,2,27,,,,,,,armadio_lab
+35,Zone,Google Cloud Platform 2018,2,27,,,,,,,research
+36,Zone,Google Cloud Platform 2018,2,27,,,,,,,management
+37,Zone,Google Cloud Platform 2018,2,27,,,,,,,conveyor
+38,Zone,Google Cloud Platform 2018,2,15,,,,,,,armadio_ateneo
+39,Circle,Geometric Shapes,2,5|6,,,,,,,amm_pc1
+40,Circle,Geometric Shapes,2,5|6,,,,,,,amm_pc2
+41,Circle,Geometric Shapes,2,5|7,,,,,,,amm_pc3
+42,Circle,Geometric Shapes,2,5|7,,,,,,,amm_pc4
+43,Circle,Geometric Shapes,2,5|8,,,,,,,amm_pc5
+44,Circle,Geometric Shapes,2,5|8,,,,,,,amm_pc6
+45,Circle,Geometric Shapes,2,3|14,,,,,,,bar_pc1
+46,Circle,Geometric Shapes,2,10|11,,,,,,,pc2_bib1
+47,Circle,Geometric Shapes,2,10|11,,,,,,,pc1_bib1
+48,Circle,Geometric Shapes,2,10|13,,,,,,,pc1_bib2
+49,Circle,Geometric Shapes,2,15|20,,,,,,,se_pc1
+50,Circle,Geometric Shapes,2,15|20,,,,,,,se_pc2
+51,Circle,Geometric Shapes,2,15|21,,,,,,,se_pc3
+52,Circle,Geometric Shapes,2,16|17,,,,,,,proiett
+53,Circle,Geometric Shapes,2,16|17,,,,,,,desktop
+54,Circle,Geometric Shapes,2,16|19,,,,,,,alpha_pc1
+55,Circle,Geometric Shapes,2,22|23,,,,,,,uff_pc1
+56,Circle,Geometric Shapes,2,22|23,,,,,,,uff_pc2
+57,Circle,Geometric Shapes,2,22|24,,,,,,,uff_pc3
+58,Circle,Geometric Shapes,2,22|24,,,,,,,uff_pc4
+59,Circle,Geometric Shapes,2,22|25,,,,,,,uff_pc5
+60,Circle,Geometric Shapes,2,22|25,,,,,,,uff_pc6
+61,Router,Network Infrastructure,2,15|38,,,,,,,r_ateneo
+62,Switch,Network Infrastructure,2,27|34,,,,,,,Switch
+63,Router,Network Infrastructure,2,27|34,,,,,,,r_lab1
+64,Router,Network Infrastructure,2,27|34,,,,,,,r_lab2
+65,Server,Network Infrastructure,2,27|34,,,,,,,vpn_lab
+66,Circle,Geometric Shapes,2,27|28,,,,,,,efc1
+67,Circle,Geometric Shapes,2,27|28,,,,,,,efc2
+68,Circle,Geometric Shapes,2,27|29,,,,,,,mill_mach
+69,Circle,Geometric Shapes,2,27|29,,,,,,,pc_cell2
+70,Circle,Geometric Shapes,2,27|30,,,,,,,printer2
+71,Circle,Geometric Shapes,2,27|30,,,,,,,printer1
+72,Circle,Geometric Shapes,2,27|37,,,,,,,conv1
+73,Circle,Geometric Shapes,2,27|37,,,,,,,conv2
+74,Circle,Geometric Shapes,2,27|35,,,,,,,rsch
+75,Circle,Geometric Shapes,2,27|36,,,,,,,mgmt
+76,Circle,Geometric Shapes,2,27|33,,,,,,,warehouse1
+77,Circle,Geometric Shapes,2,27|33,,,,,,,warehouse2
+78,Circle,Geometric Shapes,2,27|32,,,,,,,vision1
+79,Circle,Geometric Shapes,2,27|32,,,,,,,vision2
+80,Circle,Geometric Shapes,2,27|31,,,,,,,abb
+81,Circle,Geometric Shapes,2,27|31,,,,,,,kuka
+82,Circle,Geometric Shapes,2,27|31,,,,,,,plc
+83,Router,Network Infrastructure,2,22|26,,,,,,,r_ufficio
+84,Server,Network Infrastructure,2,15|21,,,,,,,s_ateneo
+85,Server,Network Infrastructure,2,16|19,,,,,,,s_alpha
+86,Router,Network Infrastructure,2,16|18,,,,,,,r_aule
+87,Router,Network Infrastructure,2,3|4,,,,,,,r_bar
+88,Router,Network Infrastructure,2,5|9,,,,,,,r_amm
+89,Router,Network Infrastructure,2,10|12,,,,,,,r_biblio
+90,Server,Network Infrastructure,2,10|13,,,,,,,s_bib2
+91,Line,,2,,,88,40,None,None,,
+92,Line,,2,,,88,39,None,None,,
+93,Line,,2,,,88,41,None,None,,
+94,Line,,2,,,88,42,None,None,,
+95,Line,,2,,,88,43,None,None,,
+96,Line,,2,,,88,44,None,None,,
+97,Line,,2,,,89,47,None,None,,
+98,Line,,2,,,89,46,None,None,,
+99,Line,,2,,,89,90,None,None,,
+100,Line,,2,,,89,48,None,None,,
+101,Line,,2,,,89,61,None,None,,
+102,Line,,2,,,87,45,None,None,,
+103,Line,,2,,,61,49,None,None,,
+104,Line,,2,,,61,50,None,None,,
+105,Line,,2,,,61,51,None,None,,
+106,Line,,2,,,61,84,None,None,,
+107,Line,,2,,,83,56,None,None,,
+108,Line,,2,,,83,55,None,None,,
+109,Line,,2,,,83,57,None,None,,
+110,Line,,2,,,83,58,None,None,,
+111,Line,,2,,,83,59,None,None,,
+112,Line,,2,,,83,60,None,None,,
+113,Line,,2,,,83,61,None,None,,
+114,Line,,2,,,86,53,None,None,,
+115,Line,,2,,,86,52,None,None,,
+116,Line,,2,,,86,85,None,None,,
+117,Line,,2,,,86,54,None,None,,
+118,Line,,2,,,61,86,None,None,,
+119,Line,,2,,,61,63,None,None,,
+120,Line,,2,,,61,64,None,None,,
+121,Line,,2,,,61,65,None,None,,
+122,Line,,2,,,63,62,None,None,,
+123,Line,,2,,,64,62,None,None,,
+124,Line,,2,,,62,66,None,None,,
+125,Line,,2,,,62,67,None,None,,
+126,Line,,2,,,68,62,None,None,,
+127,Line,,2,,,69,62,None,None,,
+128,Line,,2,,,70,62,None,None,,
+129,Line,,2,,,71,62,None,None,,
+130,Line,,2,,,72,62,None,None,,
+131,Line,,2,,,74,62,None,None,,
+132,Line,,2,,,75,62,None,None,,
+133,Line,,2,,,77,62,None,None,,
+134,Line,,2,,,76,62,None,None,,
+135,Line,,2,,,79,62,None,None,,
+136,Line,,2,,,78,62,None,None,,
+137,Line,,2,,,80,62,None,None,,
+138,Line,,2,,,81,62,None,None,,
+139,Line,,2,,,82,62,None,None,,
+140,Line,,2,,,73,62,None,None,,
+141,Line,,2,,,87,83,None,None,,
+142,Line,,2,,,88,83,None,None,,
